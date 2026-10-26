@@ -1,0 +1,11 @@
+{
+  "name": "myfeeds-reader-deploy",
+  "private": true,
+  "scripts": {
+    "build": "node -e \"require('node:fs').accessSync('public/index.html');require('node:fs').accessSync('public/data/feed.json')\"",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.152.0"
+  }
+}
