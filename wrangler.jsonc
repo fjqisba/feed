@@ -1,0 +1,16 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "feed",
+  "compatibility_date": "2026-10-26",
+  "workers_dev": true,
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "invocation_logs": true,
+      "persist": true
+    }
+  },
+  "assets": {
+    "directory": "./public"
+  }
+}
